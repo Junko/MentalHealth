@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Empleado - Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar dashboard-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>Mental Health</span>
+            </div>
+            <div class="nav-user">
+                <div class="user-info">
+                    <span>Juan Pérez</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <a href="index.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="welcome-text">
+                    <h1>¡Bienvenido, Juan!</h1>
+                    <p>Continúe su desarrollo profesional</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Completados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">75%</span>
+                        <span class="stat-label">Progreso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>4</h3>
+                        <p>Cursos Totales</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>1</h3>
+                        <p>Completados</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>En Progreso</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>75%</h3>
+                        <p>Progreso Promedio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Todos los Cursos</button>
+                <button class="filter-tab" data-filter="in-progress">En Progreso</button>
+                <button class="filter-tab" data-filter="completed">Completados</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card completed" data-category="completed">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Curso">
+                        <div class="course-badge basic">Básico</div>
+                        <div class="completion-badge">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Fundamentos del Servicio al Cliente</h3>
+                        <p>Aprenda los principios básicos para brindar un servicio excepcional</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 2 horas</span>
+                            <span><i class="fas fa-book"></i> 8/8 módulos</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <div class="progress-text">100% completado</div>
+                        <div class="course-instructor">Instructor: Dr. María González</div>
+                        <div class="course-actions">
+                            <a href="course-viewer.html" class="btn-primary">
+                                <i class="fas fa-play-circle"></i>
+                                Revisar
+                            </a>
+                            <button class="btn-certificate">
+                                <i class="fas fa-award"></i>
+                                Certificado
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card in-progress" data-category="in-progress">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg" alt="Curso">
+                        <div class="course-badge intermediate">Intermedio</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Comunicación Efectiva con Clientes</h3>
+                        <p>Técnicas avanzadas de comunicación para situaciones desafiantes</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 horas</span>
+                            <span><i class="fas fa-book"></i> 8/12 módulos</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <div class="progress-text">65% completado</div>
+                        <div class="course-instructor">Instructor: Lic. Carlos Mendoza</div>
+                        <div class="course-actions">
+                            <a href="course-viewer.html" class="btn-primary">
+                                <i class="fas fa-play-circle"></i>
+                                Continuar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card in-progress" data-category="in-progress">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Curso">
+                        <div class="course-badge advanced">Avanzado</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Manejo de Quejas y Conflictos</h3>
+                        <p>Estrategias para resolver situaciones difíciles con clientes</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 2.5 horas</span>
+                            <span><i class="fas fa-book"></i> 3/10 módulos</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <div class="progress-text">30% completado</div>
+                        <div class="course-instructor">Instructor: Mg. Ana Patricia Silva</div>
+                        <div class="course-actions">
+                            <a href="course-viewer.html" class="btn-primary">
+                                <i class="fas fa-play-circle"></i>
+                                Continuar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card not-started" data-category="not-started">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" alt="Curso">
+                        <div class="course-badge specialized">Especializado</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Inteligencia Emocional en el Trabajo</h3>
+                        <p>Desarrolle habilidades emocionales para mejorar las relaciones laborales</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 horas</span>
+                            <span><i class="fas fa-book"></i> 0/15 módulos</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">0% completado</div>
+                        <div class="course-instructor">Instructor: Dr. Roberto Martínez</div>
+                        <div class="course-actions">
+                            <a href="course-viewer.html" class="btn-primary">
+                                <i class="fas fa-play-circle"></i>
+                                Comenzar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <div class="container">
+            <h2><i class="fas fa-calendar"></i> Próximos Eventos</h2>
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">ENE</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>Webinar: Nuevas Tendencias en Servicio al Cliente</h4>
+                        <p>15 de Enero, 2024 - 3:00 PM</p>
+                        <span class="event-instructor">Con el Dr. María González</span>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">ENE</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>Sesión de Preguntas y Respuestas</h4>
+                        <p>22 de Enero, 2024 - 2:00 PM</p>
+                        <span class="event-instructor">Resuelva sus dudas sobre los cursos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
